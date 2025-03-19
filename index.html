@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link href="./src/Css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="form">
+    <h1>Registro</h1>
+    <form id="formRegister">
+      <div class="form-class">
+        <label for="name" class="date-columns">Nombre:</label>
+        <input type="text" id="name" name="name" class="bg-color" minlength="3" maxlength="50" required>
+      </div>
+      <div class="form-class">
+        <label for="lastName" class="date-columns">Apellido:</label>
+        <input type="text" id="lastName" name="lastName" class="bg-color" minlength="3" maxlength="50" required>
+      </div>
+      <div class="form-class">
+        <label for="dateRegister" class="date-columns">Fecha de Registro:</label>
+        <input type="text" id="dateRegister" name="dateRegister" class="bg-color" readonly>
+      </div>
+      <div class="form-class">
+        <label for="birthdate" class="date-columns">Fecha de Nacimiento:</label>
+        <input type="date" id="birthdate" name="birthdate" class="bg-color" required>
+      </div>
+      <div class="form-class">
+        <label for="email" class="date-columns">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" class="bg-color" required>
+      </div>
+      <div class="form-class">
+        <label for="telephone" class="date-columns">Teléfono:</label>
+        <input type="tel" id="telephone" name="telephone" class="bg-color" required>
+        <span id="telephoneHelp" style="display: none; color: gray; font-size: 0.8em;">Formato: 33-3429-5678 o 33 2329
+          2279 (Lada +
+          numero)</span>
+      </div>
+      <div class="form-class">
+        <label for="position" class="date-columns">Puesto:</label>
+        <input type="text" id="position" name="position" class="bg-color" required>
+      </div>
+      <div class="form-class">
+        <label for="img" class="date-columns">Imagen:</label>
+        <input class="bg-color" type="file" id="img" name="img" accept="image/*" class="bg-color" required>
+      </div>
+      <button class="button" type="submit">Registrar</button>
+    </form>
+    <div class="date-columns" id="mensaje"></div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-mensaje"></p>
+      </div>
+    </div>
+  </div>
+  <script src="./src/Javascript/script.js"></script>
+</body>
+
+</html>
