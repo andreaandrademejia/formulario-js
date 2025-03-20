@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	formRegister.addEventListener('submit', function (event) {
-		event.preventDefault(); // Prevenir el envío por defecto
+		event.preventDefault();
 
 		formData.telephone = telephoneInput.value;
 		formData.image = imgInput.files[0];
