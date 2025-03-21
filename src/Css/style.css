@@ -1,6 +1,6 @@
 * {
 	background: linear-gradient(to bottom, #b4b9e9, #b3e5fc);
-	color: aliceblue;
+	color: rgb(8, 15, 20);
 	box-sizing: border-box;
 }
 
@@ -115,7 +115,7 @@ button {
 }
 
 .close {
-	color: #aaa;
+	color: #0d1985;
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
